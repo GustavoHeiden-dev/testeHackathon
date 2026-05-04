@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="styleMenu.css">
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1>Menu</h1>
+    <p id="welcomeText">Bem-vindo!</p>
+    <div class="menu-actions">
+      <button id="logoutButton">Sair</button>
+    </div>
+  </div>
+
+  <script>
+    const welcomeText = document.getElementById('welcomeText');
+    const loggedUser = localStorage.getItem('loggedUserName');
+
+    if (!loggedUser) {
+      window.location.href = 'Login.html';
+    } else {
+      welcomeText.innerText = `Bem-vindo, ${loggedUser}!`;
+    }
+
+    document.getElementById('logoutButton').addEventListener('click', () => {
+      localStorage.removeItem('loggedUserName');
+      window.location.href = 'Login.html';
+    });
+  </script>
+</body>
+</html>
