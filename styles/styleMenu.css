@@ -13,7 +13,7 @@ body {
   padding: 30px 35px;
   border-radius: 12px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-  max-width: 520px;
+  max-width: 800px;
   width: 100%;
   text-align: center;
 }
@@ -30,12 +30,65 @@ h1 {
   font-size: 18px;
 }
 
+.acessibilidade-section {
+  margin-bottom: 30px;
+}
+
+.acessibilidade-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.roupa-item {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.roupa-item img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.descricao-text {
+  margin: 10px 0;
+  font-style: italic;
+  color: #555;
+  min-height: 40px;
+}
+
+.loading {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.roupa-item button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.roupa-item button:hover {
+  background-color: #45a049;
+}
+
+.roupa-item button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .menu-actions {
   display: flex;
   justify-content: center;
 }
 
-button {
+#logoutButton {
   padding: 14px 24px;
   border: none;
   border-radius: 8px;
@@ -45,6 +98,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#logoutButton:hover {
   background-color: #e04848;
 }

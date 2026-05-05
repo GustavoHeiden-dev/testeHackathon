@@ -10,25 +10,28 @@
   <div class="menu-container">
     <h1>Menu</h1>
     <p id="welcomeText">Bem-vindo!</p>
+
+    <div class="acessibilidade-section">
+      <h2>Acessibilidade</h2>
+      <div class="roupa-item">
+        <img src="../camisa.jpg" alt="Camiseta" id="camisaImg">
+        <p id="descricaoCamisa" class="descricao-text"></p>
+        <p id="loadingCamisa" class="loading" style="display:none;">Gerando descrição...</p>
+        <button id="ouvirDescricaoCamisa">Ouvir descrição</button>
+      </div>
+      <div class="roupa-item">
+        <img src="../calca.jpg" alt="Calça" id="calcaImg">
+        <p id="descricaoCalca" class="descricao-text"></p>
+        <p id="loadingCalca" class="loading" style="display:none;">Gerando descrição...</p>
+        <button id="ouvirDescricaoCalca">Ouvir descrição</button>
+      </div>
+    </div>
+
     <div class="menu-actions">
       <button id="logoutButton">Sair</button>
     </div>
   </div>
 
-  <script>
-    const welcomeText = document.getElementById('welcomeText');
-    const loggedUser = localStorage.getItem('loggedUserName');
-
-    if (!loggedUser) {
-      window.location.href = 'Login.html';
-    } else {
-      welcomeText.innerText = `Bem-vindo, ${loggedUser}!`;
-    }
-
-    document.getElementById('logoutButton').addEventListener('click', () => {
-      localStorage.removeItem('loggedUserName');
-      window.location.href = 'Login.html';
-    });
-  </script>
+  <script src="../scripts/scriptMenu.js"></script>
 </body>
 </html>

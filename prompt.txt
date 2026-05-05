@@ -1,0 +1,35 @@
+Quero implementar uma funcionalidade de acessibilidade em um projeto web simples usando HTML, CSS e JavaScript puro.
+
+Objetivo:
+Quando o usuário clicar em um botão abaixo da imagem de uma peça de roupa, o sistema deve gerar uma descrição da imagem e reproduzir essa descrição em áudio automaticamente.
+
+Requisitos:
+
+1. Estrutura:
+- Uma imagem de roupa (ex: camiseta)
+- Um botão abaixo com texto: "Ouvir descrição"
+
+2. Funcionalidade:
+- Ao clicar no botão:
+  - gerar uma descrição textual da peça (pode ser simulada ou baseada em atributos definidos no código, não precisa usar IA externa)
+  - converter essa descrição em áudio usando a Web Speech API (SpeechSynthesis)
+
+3. A descrição deve ser mais rica e sensorial, exemplo:
+"Esta é uma camiseta de algodão leve, com toque macio e caimento solto, ideal para dias quentes."
+
+4. Código:
+- Separar em HTML, CSS e JavaScript
+- Código simples e funcional
+- Não usar bibliotecas externas
+- Não usar backend
+
+5. Extra (se possível):
+- Permitir múltiplas imagens com descrições diferentes
+- Cada botão controla sua própria descrição
+
+6. Importante:
+- Não complicar com IA real ou APIs externas
+- Foco em demonstrar a experiência de UX acessível com áudio
+
+faça o codigo completo e funcional , a imagem vai estar na tela de login use o arquivo scriptMenu.js para fazer a parte do java script , coloque a imagem camisa.jpg na tela de Menu.html e o botao com a implementacáo a baixo dela .
+o css da tela de Menu caso precise mudar é o styleMenu.CSS
